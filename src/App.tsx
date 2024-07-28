@@ -1,11 +1,12 @@
+import SlideBar from "./components/SlideBar"
 
 
 function App() {
 
   return (
-    <>
-      <p className=" text-8xl"> Spotify</p>
-    </>
+    <div className="flex bg-neutral-950">
+     <SlideBar /> 
+    </div>
   )
 }
 
