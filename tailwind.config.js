@@ -8,9 +8,13 @@ export default {
     colors: {
       'black-1000': '#000000',
       'white': '#fff',
-      'neutral-400':'#ced2d9',
+      'neutral-400':'#afafa9',
       'black-1001':'#121212',
-      'test':'#203944'
+      'black-1002':'#1d1d1d',
+      'black-1003':'#212121',
+      'green-500':'#1DB954',
+      'test':'#203944',
+      'red':'#873e23'
     },
     extend: {},
   },

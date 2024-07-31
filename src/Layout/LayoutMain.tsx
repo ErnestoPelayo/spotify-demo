@@ -1,12 +1,26 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import SlideBar from "../components/SlideBar"
+import Header from "../components/Header";
 
 const LayoutMain = () => {
+  const location = useLocation()
+
+  const isSearchRoute = location.pathname === '/search';
+
+
   return (
     <>
       <div className="flex bg-black-1000">
         <SlideBar /> 
-        <div className="flex flex-row w-ful h-full bg-test mt-2 rounded-lg ">
+        <div className="w-full">
+        <div className="text-white h-16 bg-black-1001 mt-2 rounded-lg">
+          {
+            isSearchRoute ? 
+            <Header search={true}  />
+            : 
+            <Header search={false} />
+          }
+        </div>
           <Outlet />
         </div>
       </div>
