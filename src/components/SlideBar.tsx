@@ -2,6 +2,7 @@ import spotify from '/img/spotify-white-icon.png'
 import {SearchIcon,HomeFillIcon,ListUnorderedIcon,PlusIcon } from '@primer/octicons-react'
 
 import { NavLink } from "react-router-dom"
+import TermsConditions from './TermsConditions'
 
 const SlideBar = () => {
     return (
@@ -40,6 +41,9 @@ const SlideBar = () => {
               </NavLink>     
               <PlusIcon className=' mt-1 justify-end items-end ' size={28} />   
             </div>
+        </div>
+        <div className='bg-black-1001 '>
+          <TermsConditions />
         </div>
       </div>
     )
