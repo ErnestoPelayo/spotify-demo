@@ -2,7 +2,7 @@ import {GlobeIcon} from '@primer/octicons-react'
 
 const TermsConditions = () => {
   return (
-    <div className="text-neutral-400 ">
+    <div className="text-neutral-400 py-10">
         <div className="flex space-x-6 ml-4 p-1">
             <p className="text-xs">Legal</p>
             <p className="text-xs">Safity & Privacy Center</p>
