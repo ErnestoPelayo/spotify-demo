@@ -3,8 +3,11 @@ import Search from "./pages/Search"
 import Dashboard from "./pages/Dashboard"
 import LayoutMain from "./Layout/LayoutMain"
 import Library from "./pages/Library"
+import DetailArtist from "./pages/DetailArtist"
+import DetailAlbum from "./pages/DetailAlbum"
 
 const AppRouter = () => {
+
   return (
     <BrowserRouter>
         <Routes>
@@ -12,6 +15,8 @@ const AppRouter = () => {
                 <Route element={<Dashboard />} index />
                 <Route element={<Search />} path="/search" />
                 <Route element={<Library />} path="/library" />
+                <Route element={<DetailArtist />} path={`/artist/:id`} />
+                <Route element={<DetailAlbum />} path={`/album/:id`} />
             </Route>
         </Routes>
     </BrowserRouter>

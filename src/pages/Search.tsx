@@ -1,7 +1,7 @@
 
 const Search = () => {
   return (
-    <div className=" ">
+    <div className="h-screen">
       <p className=' text-8xl text-white'> Search </p>
     </div>
   )

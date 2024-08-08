@@ -18,7 +18,7 @@ const Header = ({search}:PropsHeader) => {
         : ''
     }
     <div className='flex-grow flex justify-end space-x-4 mx-4'>
-        <button className='text-white transition transform hover:scale-105'>Sign up</button>
+        <button className='text-neutral-400 hover:text-white transition transform  hover:scale-105  font-bold'>Sign up</button>
         <button className='text-black-1000 bg-white p-3 rounded-full px-8 font-bold transition transform hover:scale-105 hover:bg-neutral-400'>Log in</button>
     </div>
 </div>

@@ -1,7 +1,7 @@
 
 const Library = () => {
   return (
-    <div > 
+    <div className="h-screen" > 
       <p className='text-7xl text-white'> Your Library</p>
     </div>
   )

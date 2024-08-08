@@ -24,7 +24,8 @@ export type SongClass = {
         id:string,
         nombre_cancion:string,
         duracion:string,
-        numero_pista:number
+        numero_pista:number,
+        numero_reproducciones:number
 }
 
 export type CollectionSongsClass ={

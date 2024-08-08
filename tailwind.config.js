@@ -12,11 +12,14 @@ export default {
       'black-1001':'#121212',
       'black-1002':'#1d1d1d',
       'black-1003':'#212121',
+      'black-1004':'#3e3e3e',
       'green-500':'#1DB954',
       'test':'#203944',
       'red':'#873e23'
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('node:tailwindcss-textshadow')
+  ],
 }
