@@ -21,7 +21,7 @@ const LayoutMain = () => {
             )}
           </div>
           <Outlet />
-          <footer className="w-full">
+          <footer className="w-full mt-12">
             <Footer />
           </footer>
         </div>
