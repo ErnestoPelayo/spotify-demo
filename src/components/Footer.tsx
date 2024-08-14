@@ -47,7 +47,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="w-1/5">
-          <p className="font-bold text-white"> Spoify Plans </p>
+          <p className="font-bold text-white"> Spotify Plans </p>
           <p className=" text-neutral-400 hover:text-white hover:underline">
             Premium Individual
           </p>

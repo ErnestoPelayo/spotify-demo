@@ -14,23 +14,24 @@ const Dashboard = () => {
     const albumsDashboard = Albums.filter((item) => item.preset === 1);
     setState(artistDashboard.slice(0, 5));
     setStateAlbums(albumsDashboard.slice(0, 5));
+    console.log(artistDashboard)
   }, []);
 
   return (
     <div className=" ">
-      <div className="bg-gradient-to-b from-black-1003 to-black-1000  w-full">
+      <div className="bg-gradient-to-b from-black-1003 to-black-1000 w-full">
         <div className="flex">
           <div className="w-1/2">
             <div className="ml-6 mt-8">
-              <button className=" md:text-3xl font-medium  text-white hover:underline sm:text-sm">
+              <p className="md:text-3xl font-medium text-white  sm:text-sm">
                 Popular Artists
-              </button>
+              </p>
             </div>
           </div>
           <div className="w-1/2 p-2">
-            <div className="mt-10 mr-4 text-xs align-bottom text-right ">
+            <div className="mt-10 mr-4 text-xs align-bottom text-right">
               <Link to={"/artist"}>
-                <button className=" font-bold text-neutral-400 hover:underline">
+                <button className="font-bold text-neutral-400 hover:underline">
                   Show all
                 </button>
               </Link>
@@ -38,7 +39,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="flex justify-center p-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-6">
           {state?.map((item) => {
             return (
               <CardArtist
@@ -46,7 +47,7 @@ const Dashboard = () => {
                 id={item.id}
                 img={item.imagen}
                 name={item.nombre_artista}
-                style={1}
+                style={2}
               />
             );
           })}
@@ -55,15 +56,15 @@ const Dashboard = () => {
         <div className="flex">
           <div className="w-1/2">
             <div className="ml-6 mt-8">
-              <button className=" md:text-3xl font-medium  text-white hover:underline sm:text-sm">
+              <p className="md:text-3xl font-medium text-white sm:text-sm">
                 Popular Albums
-              </button>
+              </p>
             </div>
           </div>
           <div className="w-1/2 p-2">
-            <div className="mt-10 mr-4 text-xs align-bottom text-right ">
+            <div className="mt-10 mr-4 text-xs align-bottom text-right">
               <Link to={"/albums"}>
-                <button className=" font-bold text-neutral-400 hover:underline">
+                <button className="font-bold text-neutral-400 hover:underline">
                   Show all
                 </button>
               </Link>
@@ -71,7 +72,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="flex justify-center p-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-6">
           {stateAlbums?.map((item) => {
             return (
               <CardArtist
@@ -79,7 +80,7 @@ const Dashboard = () => {
                 id={item.id_album}
                 img={item.imagen}
                 name={item.nombre_album}
-                style={2}
+                style={1}
                 artist={item.id_cantante}
               />
             );

@@ -10,7 +10,7 @@ export const Albums: AlbumClass[] = [
     duracion: "48:12",
     numero_canciones: 11,
     imagen: "https://i.scdn.co/image/ab67616d0000b2732118bf9b198b05a95ded6300",
-    preset:0
+    preset:1
   },
   {
     id_album: "60c72b2f9b1d8b001f8e4d70",
@@ -21,7 +21,7 @@ export const Albums: AlbumClass[] = [
     duracion: "48:25",
     numero_canciones: 11,
     imagen: "https://i.scdn.co/image/ab67616d0000b27347ce408fb4926d69da6713c2",
-    preset:1
+    preset:0
   },
   {
     id_album: "60c72b2f9b1d8b001f8e4d71",
@@ -111,4 +111,61 @@ export const Albums: AlbumClass[] = [
     imagen: "https://i.scdn.co/image/ab67616d0000b273ff5429125128b43572dbdccd",
     preset:1
   },
+  {
+    id_album: "60c72b2f9b1d8b001f8e4d79",
+    id_cantante: "60c72b2f9b1d8b001f8e4d8b",
+    nombre_album: "Bien Mal",
+    fecha_lanzamiento: "2013-12-13",
+    activo: true,
+    duracion: "66:35",
+    numero_canciones: 14,
+    imagen: "https://i.scdn.co/image/ab67616d0000b2732ccbe28be97225ae844bef55",
+    preset:1
+  },
+  {
+    id_album: "60c72b2f9b1d8b001f8e4d80",
+    id_cantante: "60c72b2f9b1d8b001f8e4d9c",
+    nombre_album: "Canguro",
+    fecha_lanzamiento: "2013-12-13",
+    activo: true,
+    duracion: "66:35",
+    numero_canciones: 14,
+    imagen: "https://i.scdn.co/image/ab67616d0000b2735d9aed5c0f5f7ce3a0ea1e01",
+    preset:1
+  },
+  {
+    id_album: "60c72b2f9b1d8b001f8e4d81",
+    id_cantante: "60c72b2f9b1d8b001f8e4f1d",
+    nombre_album: "Nata Montana",
+    fecha_lanzamiento: "2013-12-13",
+    activo: true,
+    duracion: "66:35",
+    numero_canciones: 14,
+    imagen: "https://i.scdn.co/image/ab67616d0000b273e2e093427065eaca9e2f2970",
+    preset:1
+  },
+  {
+    id_album: "60c72b2f9b1d8b001f8e4d82",
+    id_cantante: "60c72b2f9b1d8b001f8e4d6g",
+    nombre_album: "Totally Krossed Out",
+    fecha_lanzamiento: "2013-12-13",
+    activo: true,
+    duracion: "66:35",
+    numero_canciones: 14,
+    imagen: "https://i.scdn.co/image/ab67616d0000b2731ffe5d4aa25c7bd1b1fc4847",
+    preset:1
+  },
+  {
+    id_album: "60c72b2f9b1d8b001f8e4d83",
+    id_cantante: "60c72b2f9b1d8b001f8e4d7a",
+    nombre_album: "Exodo",
+    fecha_lanzamiento: "2013-12-13",
+    activo: true,
+    duracion: "66:35",
+    numero_canciones: 14,
+    imagen: "https://i.scdn.co/image/ab67616d0000b2732690127e1d6cd0aa35cc353b",
+    preset:1
+  },
+
+
 ];

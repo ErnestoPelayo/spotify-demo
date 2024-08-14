@@ -6,6 +6,7 @@ import Library from "./pages/Library"
 import DetailArtist from "./pages/DetailArtist"
 import DetailAlbum from "./pages/DetailAlbum"
 import AllArtist from "./pages/AllArtist"
+import AllAlbums from "./pages/AllAlbums"
 
 const AppRouter = () => {
 
@@ -15,6 +16,7 @@ const AppRouter = () => {
             <Route element={<LayoutMain />}>
                 <Route element={<Dashboard />} index />
                 <Route element={<AllArtist />} path="/artist" />
+                <Route element={<AllAlbums />} path="/albums" />
                 <Route element={<Search />} path="/search" />
                 <Route element={<Library />} path="/library" />
                 <Route element={<DetailArtist />} path={`/artist/:id`} />

@@ -32,35 +32,22 @@ const SlideBar = () => {
           </NavLink>
         </div>
         <div className="flex text-neutral-400 hover:text-white">
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "uppercase text-white font-bold"
-                : "uppercase text-neutral-400 font-bold"
-            }
-            to={"/search"}
+          <p
           >
             <SearchIcon size={28} className=" mr-7" />
             <button className="mt-1 font-bold hover:underline">Search</button>
-          </NavLink>
+          </p>
         </div>
       </div>
       <div className="bg-black-1001">
         <div className="p-6 rounded-lg space-y-5 mt-2">
           <div className="w-full flex text-neutral-400 hover:text-white">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "uppercase text-white font-bold"
-                  : "uppercase text-neutral-400 font-bold"
-              }
-              to={"/library"}
-            >
+            <>
               <ListUnorderedIcon className="mr-7" size={28} />
               <button className="mt-1 font-bold hover:underline">
                 Your Library
               </button>
-            </NavLink>
+            </>
             <PlusIcon className="mt-1 ml-auto" size={28} />
           </div>
         </div>
