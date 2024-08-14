@@ -4,12 +4,22 @@ import { Albums } from "../helpers/Albums";
 import CardArtist from "../components/CardArtist";
 import { AlbumClass, ArtistClass } from "../Types";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 const Dashboard = () => {
   const [state, setState] = useState<ArtistClass[]>();
   const [stateAlbums, setStateAlbums] = useState<AlbumClass[]>();
 
+
   useEffect(() => {
+
+    Swal.fire({
+      title: 'Spotify Demo!!',
+      text: 'Es un proyecto solo con fines de agregar al portafolio  !!',
+      icon: 'info',
+      confirmButtonText: 'Cerrar'
+    })
+
     const artistDashboard = Artist.filter((item) => item.preset === 1);
     const albumsDashboard = Albums.filter((item) => item.preset === 1);
     setState(artistDashboard.slice(0, 5));
